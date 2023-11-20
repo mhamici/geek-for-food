@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek for Food</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Geek et Food Logo" class="logo">
+        <nav>
+        <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Nos Panier</a></li>
+        <li><a href="#">Espace client</a></li>
+    </ul>
+</nav>
+    </header>
+
+<!-- Features -->  
+<section class="banner-section">
+    <h1>Nourrissez votre corps. Équilibrez votre esprit.</h1>
+</section>
+<section class="features-section">
+    <div class="features-content">
+        <h1>Geek and Food rend la cuisine facile et amusante !</h1>
+        <p>Découvrez nos produits de qualité supérieure et nos recettes simples à réaliser.</p>
+        <p></p>
+        <div class="features-icons">
+            <div class="feature-item">
+                <img src="icon1.png" alt="Origine locale">
+                <p>Origine locale</p>
+            </div>
+            <div class="feature-item">
+                <img src="icon2.png" alt="Ingrédients 100% naturels">
+                <p>Ingrédients 100% naturels</p>
+            </div>
+            <div class="feature-item">
+                <img src="icon3.png" alt="Recettes authentiques">
+                <p>Recettes authentiques</p>
+            </div>
+        </div>
+                <button type="button" class="promo-button">Voir le menu</button>
+        <p class="discount-message">Obtenez 10% de réduction sur votre première commande en ligne. Essayez dès maintenant.</p>
+    </div>
+</section>
+<!-- Recepies --> 
+        <section class="banner-section">
+            <h1>Cuisinez avec Miyazaki</h1>
+        </section>
+
+        <section class="recipes">
+            <div class="recipe"> 
+            <img src="image1" alt="Petits Pains aux Haricots Rouges">
+                <h3>Petits Pains aux Haricots Rouges</h3>
+                <p>Les petits pains aux haricots rouges à la vapeur (豆沙包) sont l'un des desserts chinois les plus populaires. Ces adorables et moelleuses brioches à la vapeur sont idéales pour le petit-déjeuner. Pour préparer ces brioches aux haricots rouges, j'ai d'abord préparé de la pâte de haricots rouges. Pour savoir comment préparer votre propre pâte de haricots rouges (version facile à écraser ou version très lisse), cliquez ici. Si vous ne voulez pas vous ruiner, vous trouverez de la pâte de haricots rouges sucrée pour les brioches dans de nombreux magasins asiatiques.</p>
+            </div>
+            <div class="recipe">
+                <img src="image2" alt="Gâteau Éponge de Spirited Away">
+                <h3>Gâteau Éponge de Spirited Away</h3>
+                <p>La génoise japonaise (スポンジケーキ) est un gâteau blanc-jaune très léger et moelleux qui constitue la base de nombreuses sucreries japonaises de style occidental.  Bien que nous ayons nos propres desserts japonais traditionnels comme le gâteau de riz Mochi et les haricots rouges sucrés Anko, les gâteaux et autres friandises de style occidental sont extrêmement populaires au Japon.  Une fois que vous maîtriserez la génoise japonaise, vous serez en mesure de préparer divers desserts japonais de style occidental.</p>
+            </div>
+            <div class="recipe">
+                <img src="image3" alt="My Neighbor Totoro Satsuki’s Bento Recipe">
+                <h3>My Neighbor Totoro Satsuki’s Bento Recipe</h3>
+                <p>Satsuki remplit une boîte à bento ovale de riz et la garnit de Shishamo grillé, d'Umeboshi, d'Edamame et de Sakura Denbu (à commander ici). Le Sakura Denbu est un flocon de morue cuit et séché de couleur rose, légèrement sucré et salé. Vous pouvez trouver tous ces ingrédients dans votre marché japonais local ou vous pouvez commander des ingrédients japonais et des produits d'épicerie chez Geek and Food qui les livrent directement chez vous.</p>
+            </div>
+        </section>
+<!-- Video section -->  
+<section class="banner-section">
+    <h1>Pour commander des repas à base de fruits et de légumes chez Geek and Food, remplissez le formulaire ci-dessous</h1>
+</section>
+<section class="content-section">
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="Geek and Food rend la cuisine facile et amusante !.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="form-container">
+        <form action="submit-order.php" method="post" class="order-form">
+            <h1>Commandez votre Box Repas</h1>
+            <div class="form-group">
+                <label for="fullName">Nom Complet:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="emailAddress">Adresse Email:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="boxType">Type de Box:</label>
+                <select id="boxType" name="boxType" required>
+                    <option value="">Sélectionnez un type</option>
+                    <option value="vegetarian">Végétarien</option>
+                    <option value="meat">Viande</option>
+                    <option value="fish">Poisson</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="boxQuantity">Quantité:</label>
+                <input type="number" id="boxQuantity" name="boxQuantity" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="specialRequests">Demandes Spéciales:</label>
+                <textarea id="specialRequests" name="specialRequests"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Commander maintenant</button>
+        </form>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+    <div class="testimonials-header">
+        <img src="icon5.png" alt="Icon" class="testimonials-icon">
+        <h1>Les témoignages viennent de nos clients chez Geek and Food.</h1>
+    </div>
+    <div class="testimonial-columns">
+        <div class="testimonial">
+            <blockquote>
+                <p>Entièrement conquise depuis plus de 3 ans ! Geek and Food a révolutionné notre façon de cuisiner et de manger à la maison. Tout le monde participe. Gain de temps énorme, plus besoin de se creuser la tête pour savoir quoi cuisiner, tout est déjà là pour préparer des plats superbes, et donc plus besoin de faire de grosses courses alimentaires.</p>
+                <cite>Elena</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>Essayé pendant le confinement, adopté depuis. Les produits sont de grande qualité, cela m'a permis d'améliorer mes compétences culinaires, de manger sainement et les prix sont vraiment raisonnables pour chaque repas. En résumé, je suis pleinement satisfait jusqu'à présent !</p>
+                <cite>Nicole Yang</cite>
+            </blockquote>
+        </div>
+        <div class="testimonial">
+            <blockquote>
+                <p>Mon héros des repas, comme je l'appelle. Je gaspille beaucoup moins, les repas sont variés. Je ne passe plus des heures à chercher des idées de recettes. J'ai également la chance de découvrir de nouveaux aliments. Les produits sont bien meilleurs que ce que j'achetais en magasin. Merci à Geek and Food !</p>
+                <cite>Mark</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Geek et Food</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="facebook icon.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="загрузка.jpeg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="instagram icon.png" alt="Instagram">
+            </a>
+</div>
+    </footer>
+
+</body>
+</html>
